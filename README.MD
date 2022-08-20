@@ -8,13 +8,15 @@ npm start
 npm run start
 
 
-##language 
+## language 
 
 html 
 css
 scss
 tailwind
 javascript
+## Version
+1.00.0
 
 
 
