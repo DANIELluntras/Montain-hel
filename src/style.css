@@ -101,6 +101,8 @@
   }
   
   p {
+    margin:60px;
+    font-size:2rem;
     color: #666;
   }
   
@@ -111,6 +113,7 @@
   
   img {
     transition: filter 0.5s;
+
   }
   
   .lazy-img {
@@ -127,13 +130,14 @@
     padding: 0 6rem;
     border-radius: 6px;
     z-index: 100;
-    background-color: rgb(17, 71, 34);
+    background-image: linear-gradient(rgb(127, 195, 135), rgb(105, 158, 141));
   }
   
   /* nav and stickly class at the same time */
   .nav.sticky {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-image: linear-gradient(rgb(127, 195, 135), rgb(105, 158, 141));
+    
   }
   
   .nav__logo {
@@ -240,7 +244,7 @@ font-size: 2.3rem;
   
   /* FEATURES */
   .features {
-    display: grid;
+   
     grid-template-columns: 1fr 1fr;
    
     margin: 0 12rem;
@@ -305,5 +309,24 @@ font-size: 2.3rem;
 }
 /* line */
 .line{
+  padding:0.1rem;
   background-color: #222;
+}
+.image-education{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-opacity);
+  height: 40.5rem;
+  width: 50.5rem;
+  
+  margin-bottom: 2rem;
+
+}
+.imagemove{
+  display: flex;
+  
+  align-items: right;
+  justify-content: right;
 }
