@@ -1,0 +1,25 @@
+{
+  "name": "montain-help",
+  "version": "1.0.0",
+  "description": "this project is to help and put it into practice",
+  "main": "script.js",
+  "scripts": {
+    "ng": "nx",
+    "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
+    "build:auth": "npm --prefix auth run build",
+    "start": "nx serve",
+    "build": "nx build",
+    "test": "nx test",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "DANIELluntras"
+  },
+  "author": "Daniel luntras",
+  "license": "ISC",
+  "dependencies": {
+    "gitkeep": "^1.0.0",
+    "prettierrc": "^0.0.0-5"
+  }
+}
