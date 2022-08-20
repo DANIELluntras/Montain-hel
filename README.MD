@@ -17,6 +17,8 @@ tailwind
 javascript
 ## Version
 1.00.0
+## Image for people 
+## People who participated in this project are
 
 
 
