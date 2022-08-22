@@ -421,3 +421,36 @@ font-size: 2.3rem;
 .operations__content--2{
   display :none;
 }
+/* imagine pentru echipamentuld ski */
+.image-education1{
+  display:felx;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9rem;
+  height: 40.5rem;
+  width: 70.5rem;
+  margin:3rem;
+}
+.imgagne{
+  display:felx;
+  text-align:center;
+  
+  margin:80px;
+  border:solid 1px  #222
+
+}
+.linecenter{
+  background-color: white;
+  display:felx;
+  text-align:center;
+  margin:20px;
+  border:solid 1px  #222
+}
+.linecenters{
+  border-radius: 30px;
+  display:felx;
+  text-align:center;
+  margin:20px;
+  border:solid 1px  rgb(124, 205, 224)
+}
