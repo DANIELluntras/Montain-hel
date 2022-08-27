@@ -37,6 +37,23 @@
     line-height: 1.9;
     background-color: #f3f3f3;
   }
+
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+  #navbar {
+    overflow: hidden;
+   
+  }
   
   /* GENERAL ELEMENTS */
   .section {
@@ -275,19 +292,9 @@ font-size: 2.3rem;
     transform: scale(1.07, 1.05) skewX(-15deg);
     background-color: rgb(132, 206, 235);
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .operations__content{
+    position:absolute
+  }
 
   /* FEATURES */
   .features {
@@ -453,4 +460,60 @@ font-size: 2.3rem;
   text-align:center;
   margin:20px;
   border:solid 1px  rgb(124, 205, 224)
+}
+
+.highlightred {
+  position: relative;
+}
+.highlightred:after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05) skewX(15deg);
+  background-color: rgb(230, 108, 153);
+}
+.highlightre {
+  position: relative;
+}
+.highlightre:after {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  text-align:center;
+  background-color: rgb(230, 108, 153);
+}
+.Risc{
+  display: flex;
+  border:solid 1px rgb(7, 4, 4);
+
+}
+.Distractie{
+  display: flex;
+  border:solid 1px rgb(7, 4, 4);
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  column-gap: 3rem;
+  row-gap: 0.5rem;
+}
+.Distractie{
+
+  /* JUST PRESENTATIONAL */
+  font-size: 1.7rem;
+  padding: 2.5rem 7rem 6.5rem 7rem;
 }
