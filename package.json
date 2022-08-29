@@ -2,19 +2,18 @@
   "name": "montain-help",
   "version": "1.0.0",
   "description": "this project is to help and put it into practice",
-  "main": "script.js",
+  "main": "app.js",
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
-    "build:auth": "npm --prefix auth run build",
-    "start": "nx serve",
+    "start": "nodemon open-FirstNodejs -Server",
     "build": "nx build",
-    "test": "nx test",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
   "repository": {
     "type": "git",
-    "url": "DANIELluntras"
+    "url": "git+https://github.com/DANIELluntras/javascript.git"
   },
   "author": "Daniel luntras",
   "license": "ISC",
@@ -22,6 +21,8 @@
     "@nguniversal/express-engine": "^14.1.0",
     "angular": "^1.8.3",
     "gitkeep": "^1.0.0",
-    "prettierrc": "^0.0.0-5"
+    "nodemon": "^2.0.19",
+    "prettierrc": "^0.0.0-5",
+    "tailwind": "^4.0.0"
   }
 }
