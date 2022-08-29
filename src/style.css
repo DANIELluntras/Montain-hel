@@ -55,6 +55,10 @@
    
   }
   
+  .section1-paragaf{
+padding: 80px;
+
+  }
   /* GENERAL ELEMENTS */
   .section {
     transition: transform 1s, opacity 1s;
