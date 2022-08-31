@@ -1,27 +1,21 @@
-const http = require('http')
-const fs = require('fs')
-const port = 2400
+const compression = require('compression');
+const express = require('express');
+const path = require('path');
 
-const server = http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/html' })
-    fs.readFile('index.html', function (error, data) {
-        if (error) {
-            res.writeHead(404)
-            res.write('error:File not found')
-        } else {
-            res.write(data)
-        }
-        res.end()
-    })
-    res.write('hello  i Am Luntras daniel and i dont start a server  :))')
+const cors = require('cors');
+
+const port = process.env.PORT || 3000;
+
+const app = express();
+app.use(compression())
+
+app.disable("x-powerd-by")
+app.use(cors());
+
+app.use('/', express.static(path.join(__dirname, 'src/')));
 
 
-})
 
-server.listen(port, function (error) {
-    if (error) {
-        console.log('somerhing went wrong ', error)
-    } else {
-        console.log('Server is listening on port' + port)
-    }
-})
+app.get('/test', (req, resp) => resp.send('test'));
+
+app.listen(port, () => console.log('Port ' + port));

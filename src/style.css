@@ -10,7 +10,7 @@
     --color-primary-opacity: #5ec5763a;
     --color-secondary-opacity: #ffcd0331;
     --color-tertiary-opacity: #ff58602d;
-    --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+    --gradient-primary: linear-gradient(to top left, #69afda, #9be15d);
     --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
   }
   
@@ -165,15 +165,15 @@ border-radius:3px;
     height: 9rem;
     width: 100%;
     padding: 0 6rem;
-    border-radius: 6px;
+   
     z-index: 100;
-    background-image: linear-gradient(rgb(127, 195, 135), rgb(105, 158, 141));
+    background-image: linear-gradient(rgb(42, 94, 55), rgb(55, 88, 76));
   }
   
   /* nav and stickly class at the same time */
   .nav.sticky {
     position: fixed;
-    background-image: linear-gradient(rgb(127, 195, 135), rgb(105, 158, 141));
+    background-image: linear-gradient(rgb(42, 94, 55), rgb(55, 88, 76));
     
   }
   
@@ -197,18 +197,23 @@ border-radius:3px;
   
   .nav__link:link,
   .nav__link:visited {
+    background-color: #110f0b;
+    padding: 10px;
     font-size: 1.7rem;
     font-weight: 400;
     color: inherit;
+    border-radius: 0.9rem;
     text-decoration: none;
     display: block;
     transition: all 0.3s;
+    border:solid 1px black;
   }
   
   .nav__link--btn:link,
   .nav__link--btn:visited {
     padding: 0.8rem 2.5rem;
     border-radius: 3rem;
+    border:solid 1px black;
     background-color: var(--color-primary);
     color: #222;
   }
@@ -217,6 +222,7 @@ border-radius:3px;
   .nav__link--btn:active {
     color: inherit;
     background-color: var(--color-primary-darker);
+    border:solid 1px black;
     color: #333;
   }
   
@@ -501,23 +507,44 @@ font-size: 2.3rem;
   text-align:center;
   background-color: rgb(230, 108, 153);
 }
+.Risc__h1and1{
+ position: relative;
+  text-align: center;
+}
 .Risc{
   display: flex;
   border:solid 1px rgb(7, 4, 4);
-
+     border:solid 1px rgb(7, 4, 4);
+   padding:20px;
+   margin: 20px;
 }
 .Distractie{
-  display: flex;
+ position: relative;
   border:solid 1px rgb(7, 4, 4);
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 7rem 1fr;
-  column-gap: 3rem;
-  row-gap: 0.5rem;
+padding:20px;
+margin: 20px;
 }
 .Distractie{
-
   /* JUST PRESENTATIONAL */
   font-size: 1.7rem;
-  padding: 2.5rem 7rem 6.5rem 7rem;
+} 
+ .botton{
+  padding: 2px;
+  text-align: center;
+}
+.toObject{
+ 
+
+
+}
+.sectionthree-riskandfun{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+position: relative;
+  text-align: center; 
+}
+.sectionthree{
+  text-align: center;
 }
