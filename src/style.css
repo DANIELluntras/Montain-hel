@@ -302,9 +302,9 @@ font-size: 2.3rem;
     transform: scale(1.07, 1.05) skewX(-15deg);
     background-color: rgb(132, 206, 235);
   }
-  .operations__content{
+  /* .operations__content{
     position:absolute
-  }
+  } */
 
   /* FEATURES */
   .features {
@@ -432,11 +432,13 @@ font-size: 2.3rem;
   padding: 5rem;
   border-radius: 0.9rem;
 }
-.operations__content--1{
-  display:none
+#operations__content--1{
+  display:none;
+ 
 }
-.operations__content--2{
+#operations__content--2{
   display :none;
+ 
 }
 /* imagine pentru echipamentuld ski */
 .image-education1{
